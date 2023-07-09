@@ -1,19 +1,15 @@
 import { Next_links } from './components/next.js_links'
-import { Vercel_Logo } from './components/vercl_logo'
 import { Next_Logo } from './components/next_logo'
 import Header from './components/header'
-import { Headline } from './components/headline'
+import { Main } from './components/main'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Header />
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <Headline page="index"/>
-        <Vercel_Logo />
-      </div>
-        <Next_Logo />
-        <Next_links />
+      <Main page="index"/>
+      <Next_Logo />
+      <Next_links />
     </main>
   )
 }
